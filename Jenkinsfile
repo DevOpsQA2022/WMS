@@ -8,7 +8,7 @@ pipeline {
             
             steps {  
                             
-               bat 'gradle build'
+               bat 'gradle build --warning-mode all'
                 echo "successfully build"
                 
             }
