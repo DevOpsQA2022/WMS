@@ -4,7 +4,8 @@ import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.icu.util.Calendar;
+import java.util.Calendar;
+import java.text.SimpleDateFormat;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -39,7 +40,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.SocketTimeoutException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
