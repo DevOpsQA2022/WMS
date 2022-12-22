@@ -1614,15 +1614,15 @@ public class WMSDbHelper{
                 config.setID(mCursor.getString(mCursor.getColumnIndexOrThrow(CONFIG_SETTINGS_ID)));
                 config.setAppName(mCursor.getString(mCursor.getColumnIndexOrThrow(CONFIG_SETTINGS_APP_NAME)));
                 config.setAppDesc(mCursor.getString(mCursor.getColumnIndexOrThrow(CONFIG_SETTINGS_APP_DESC)));
-                config.setInstallationDate(mCursor.getString(mCursor.getColumnIndex(CONFIG_SETTINGS_INSTALLATION_DATE)));
-                config.setExpDate(mCursor.getString(mCursor.getColumnIndex(CONFIG_SETTINGS_EXP_DATE)));
-                config.setNoOfDays(mCursor.getString(mCursor.getColumnIndex(CONFIG_SETTINGS_NUMBER_OF_DAYS)));
-                config.setDeviceId(mCursor.getString(mCursor.getColumnIndex(CONFIG_SETTINGS_DEVICE_ID)));
-                config.setUsername(mCursor.getString(mCursor.getColumnIndex(CONFIG_SETTINGS_USERNAME)));
-                config.setPassword(mCursor.getString(mCursor.getColumnIndex(CONFIG_SETTINGS_PASSWORD)));
-                config.setAdminPassword(mCursor.getString(mCursor.getColumnIndex(CONFIG_SETTINGS_ADMIN_PASSWORD)));
-                config.setSessionId(mCursor.getString(mCursor.getColumnIndex(CONFIG_SETTINGS_SESSIONID)));
-                config.setCurrentCompany(mCursor.getString(mCursor.getColumnIndex(CONFIG_SETTINGS_CURRENT_COMPANY)));
+                config.setInstallationDate(mCursor.getString(mCursor.getColumnIndexOrThrow(CONFIG_SETTINGS_INSTALLATION_DATE)));
+                config.setExpDate(mCursor.getString(mCursor.getColumnIndexOrThrow(CONFIG_SETTINGS_EXP_DATE)));
+                config.setNoOfDays(mCursor.getString(mCursor.getColumnIndexOrThrow(CONFIG_SETTINGS_NUMBER_OF_DAYS)));
+                config.setDeviceId(mCursor.getString(mCursor.getColumnIndexOrThrow(CONFIG_SETTINGS_DEVICE_ID)));
+                config.setUsername(mCursor.getString(mCursor.getColumnIndexOrThrow(CONFIG_SETTINGS_USERNAME)));
+                config.setPassword(mCursor.getString(mCursor.getColumnIndexOrThrow(CONFIG_SETTINGS_PASSWORD)));
+                config.setAdminPassword(mCursor.getString(mCursor.getColumnIndexOrThrow(CONFIG_SETTINGS_ADMIN_PASSWORD)));
+                config.setSessionId(mCursor.getString(mCursor.getColumnIndexOrThrow(CONFIG_SETTINGS_SESSIONID)));
+                config.setCurrentCompany(mCursor.getString(mCursor.getColumnIndexOrThrow(CONFIG_SETTINGS_CURRENT_COMPANY)));
             }
         }
         catch (Exception e)
