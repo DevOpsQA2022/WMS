@@ -8,7 +8,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.icu.util.Calendar;
+import java.util.Calendar;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
