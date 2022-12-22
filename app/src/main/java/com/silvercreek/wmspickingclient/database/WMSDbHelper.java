@@ -1611,9 +1611,9 @@ public class WMSDbHelper{
             while (mCursor.moveToNext()) {
                 config = new configsettings();
 
-                config.setID(mCursor.getString(mCursor.getColumnIndex(CONFIG_SETTINGS_ID)));
-                config.setAppName(mCursor.getString(mCursor.getColumnIndex(CONFIG_SETTINGS_APP_NAME)));
-                config.setAppDesc(mCursor.getString(mCursor.getColumnIndex(CONFIG_SETTINGS_APP_DESC)));
+                config.setID(mCursor.getString(mCursor.getColumnIndexOrThrow(CONFIG_SETTINGS_ID)));
+                config.setAppName(mCursor.getString(mCursor.getColumnIndexOrThrow(CONFIG_SETTINGS_APP_NAME)));
+                config.setAppDesc(mCursor.getString(mCursor.getColumnIndexOrThrow(CONFIG_SETTINGS_APP_DESC)));
                 config.setInstallationDate(mCursor.getString(mCursor.getColumnIndex(CONFIG_SETTINGS_INSTALLATION_DATE)));
                 config.setExpDate(mCursor.getString(mCursor.getColumnIndex(CONFIG_SETTINGS_EXP_DATE)));
                 config.setNoOfDays(mCursor.getString(mCursor.getColumnIndex(CONFIG_SETTINGS_NUMBER_OF_DAYS)));
