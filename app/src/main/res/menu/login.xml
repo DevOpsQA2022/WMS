@@ -3,6 +3,6 @@
     <item
         android:id="@+id/action_settings"
         android:title="@string/page_title_settings"
-        android:showAsAction="always" />
+        compat:showAsAction="always" />
 
 </menu>
